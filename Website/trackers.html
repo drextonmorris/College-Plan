@@ -5,281 +5,349 @@
   <title>Drexton Flight Plan | Trackers</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="logo">
-    <span class="logo-mark">✈</span>
-    <span class="logo-text">Drexton Flight Plan</span>
-  </div>
-  <label class="theme-toggle">
-  <input type="checkbox" id="themeSwitch">
-  <span class="slider"></span>
-</label>
-
-  <nav class="main-nav">
-    <a href="index.html">Home</a>
-    <a href="year1-2.html">Years 1–2</a>
-    <a href="year3-4.html">Years 3–4</a>
-    <a href="careers.html">Career Paths</a>
-    <a href="trackers.html" class="active">Trackers</a>
-  </nav>
-</header>
-
-<main class="content">
-  <h1>Progress Trackers</h1>
-  <p class="page-intro">
-    Use this page to track your flight hours, completed classes, ratings, and milestones.
-    Update it every semester to stay aligned with your long-term aviation goals.
-  </p>
-
-  
-
-  <!-- Flight Hours Section -->
-<section class="card">
-  <h2>Flight Hours Log</h2>
-  <p>Enter your current hours in each category. Update as you progress.</p>
-
-  <!-- Progress Bar + % input -->
-  <label for="hoursProgressInput">Overall Progress Toward Airline Hours (%)</label>
-  <input type="text" id="hoursProgressInput" class="input-field" placeholder="e.g., 35">
-
-  <div class="progress-container">
-    <div class="progress-bar" id="hoursProgressBar">0%</div>
-  </div>
-
-  <div class="grid two-col">
-    <div>
-      <label for="totalHours">Total Hours</label>
-      <input type="text" id="totalHours" class="input-field" placeholder="e.g., 42.3">
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-mark">✈</span>
+      <span class="logo-text">Drexton Flight Plan</span>
     </div>
-    <div>
-      <label for="pplHours">Private Pilot (PPL)</label>
-      <input type="text" id="pplHours" class="input-field" placeholder="e.g., 18.7">
-    </div>
-    <div>
-      <label for="irHours">Instrument (IR)</label>
-      <input type="text" id="irHours" class="input-field" placeholder="e.g., 5.2">
-    </div>
-    <div>
-      <label for="cplHours">Commercial (CPL)</label>
-      <input type="text" id="cplHours" class="input-field" placeholder="e.g., 0.0">
-    </div>
-    <div>
-      <label for="multiHours">Multi-Engine</label>
-      <input type="text" id="multiHours" class="input-field" placeholder="e.g., 0.0">
-    </div>
-    <div>
-      <label for="cfiHours">CFI / CFII / MEI</label>
-      <input type="text" id="cfiHours" class="input-field" placeholder="e.g., 0.0">
-    </div>
-  </div>
-</section>
+
+    <label class="theme-toggle">
+      <input type="checkbox" id="themeSwitch">
+      <span class="slider"></span>
+    </label>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="year1-2.html">Years 1–2</a>
+      <a href="year3-4.html">Years 3–4</a>
+      <a href="careers.html">Career Paths</a>
+      <a href="trackers.html" class="active">Trackers</a>
+    </nav>
+  </header>
 
 
-  <!-- Ratings Checklist -->
-  <section class="card">
-  <h2>Ratings & Certifications Checklist</h2>
-  <ul class="checklist">
-    <li>
-      <input type="checkbox" id="chk_ppl" class="save-check">
-      <label for="chk_ppl">Private Pilot License (PPL)</label>
-    </li>
-    <li>
-      <input type="checkbox" id="chk_ir" class="save-check">
-      <label for="chk_ir">Instrument Rating (IR)</label>
-    </li>
-    <li>
-      <input type="checkbox" id="chk_cpl" class="save-check">
-      <label for="chk_cpl">Commercial Pilot License (CPL)</label>
-    </li>
-    <li>
-      <input type="checkbox" id="chk_me" class="save-check">
-      <label for="chk_me">Multi-Engine Rating (ME)</label>
-    </li>
-    <li>
-      <input type="checkbox" id="chk_cfi" class="save-check">
-      <label for="chk_cfi">Certified Flight Instructor (CFI)</label>
-    </li>
-    <li>
-      <input type="checkbox" id="chk_cfii" class="save-check">
-      <label for="chk_cfii">CFII (Instrument Instructor)</label>
-    </li>
-    <li>
-      <input type="checkbox" id="chk_mei" class="save-check">
-      <label for="chk_mei">MEI (Multi-Engine Instructor)</label>
-    </li>
-    <li>
-      <input type="checkbox" id="chk_med" class="save-check">
-      <label for="chk_med">First Class Medical</label>
-    </li>
-    <li>
-      <input type="checkbox" id="chk_hours" class="save-check">
-      <label for="chk_hours">1,000–1,500 Total Hours</label>
-    </li>
-  </ul>
-</section>
+
+  <main class="content">
+
+    <h1>Progress Trackers</h1>
+
+    <p class="page-intro">
+      Use this page to track your flight hours, completed classes, ratings, and milestones.
+      Update it every semester to stay aligned with your long-term aviation goals.
+    </p>
 
 
-  <!-- Required Classes Checklist -->
-<section class="card">
-  <h2>Required UVU Classes Checklist</h2>
-  <p>Mark off each class as you complete it.</p>
 
-  <h3>General Education</h3>
-  <ul class="checklist">
-    <li>
-      <input type="checkbox" id="gen_engl2010" class="save-check">
-      <label for="gen_engl2010">ENGL 2010 (Completed)</label>
-    </li>
-    <li>
-      <input type="checkbox" id="gen_math1210" class="save-check">
-      <label for="gen_math1210">MATH 1210 (AP Calc)</label>
-    </li>
-    <li>
-      <input type="checkbox" id="gen_pols1100" class="save-check">
-      <label for="gen_pols1100">POLS 1100</label>
-    </li>
-    <li>
-      <input type="checkbox" id="gen_thea1023" class="save-check">
-      <label for="gen_thea1023">THEA 1023 (Fine Arts)</label>
-    </li>
-    <li>
-      <input type="checkbox" id="gen_biol1010" class="save-check">
-      <label for="gen_biol1010">BIOL 1010</label>
-    </li>
-    <li>
-      <input type="checkbox" id="gen_pes1097" class="save-check">
-      <label for="gen_pes1097">PES 1097</label>
-    </li>
-    <li>
-      <input type="checkbox" id="gen_comm2110" class="save-check">
-      <label for="gen_comm2110">COMM 2110</label>
-    </li>
-    <li>
-      <input type="checkbox" id="gen_hum1010" class="save-check">
-      <label for="gen_hum1010">HUM 1010</label>
-    </li>
-    <li>
-      <input type="checkbox" id="gen_elective" class="save-check">
-      <label for="gen_elective">Gen Ed Elective</label>
-    </li>
-  </ul>
+    <!-- ========================================================= -->
+    <!-- FLIGHT HOURS SECTION -->
+    <!-- ========================================================= -->
 
-  <h3>Aviation Core</h3>
-  <ul class="checklist">
-    <li>
-      <input type="checkbox" id="avsc_1010" class="save-check">
-      <label for="avsc_1010">AVSC 1010 – Survey of Aviation</label>
-    </li>
-    <li>
-      <input type="checkbox" id="avsc_1100" class="save-check">
-      <label for="avsc_1100">AVSC 1100 – Private Ground</label>
-    </li>
-    <li>
-      <input type="checkbox" id="avsc_1110" class="save-check">
-      <label for="avsc_1110">AVSC 1110 – Private Flight</label>
-    </li>
-    <li>
-      <input type="checkbox" id="avsc_2070" class="save-check">
-      <label for="avsc_2070">AVSC 2070 – Aviation Weather</label>
-    </li>
-    <li>
-      <input type="checkbox" id="avsc_2150" class="save-check">
-      <label for="avsc_2150">AVSC 2150 – Air Transportation</label>
-    </li>
-    <li>
-      <input type="checkbox" id="avsc_2110" class="save-check">
-      <label for="avsc_2110">AVSC 2110 – Instrument Ground</label>
-    </li>
-    <li>
-      <input type="checkbox" id="avsc_2120" class="save-check">
-      <label for="avsc_2120">AVSC 2120 – Instrument Flight</label>
-    </li>
-    <li>
-      <input type="checkbox" id="avsc_2160" class="save-check">
-      <label for="avsc_2160">AVSC 2160 – Aviation Safety</label>
-    </li>
-    <li>
-      <input type="checkbox" id="avsc_3110" class="save-check">
-      <label for="avsc_3110">AVSC 3110 – Commercial Ground</label>
-    </li>
-    <li>
-      <input type="checkbox" id="avsc_3120" class="save-check">
-      <label for="avsc_3120">AVSC 3120 – Commercial Flight</label>
-    </li>
-    <li>
-      <input type="checkbox" id="avsc_multi" class="save-check">
-      <label for="avsc_multi">Multi-Engine Add-On</label>
-    </li>
-    <li>
-      <input type="checkbox" id="avsc_cfi_ground" class="save-check">
-      <label for="avsc_cfi_ground">CFI Ground</label>
-    </li>
-    <li>
-      <input type="checkbox" id="avsc_cfi_flight" class="save-check">
-      <label for="avsc_cfi_flight">CFI Flight</label>
-    </li>
-    <li>
-      <input type="checkbox" id="avsc_cfii" class="save-check">
-      <label for="avsc_cfii">CFII</label>
-    </li>
-    <li>
-      <input type="checkbox" id="avsc_mei" class="save-check">
-      <label for="avsc_mei">MEI</label>
-    </li>
-  </ul>
-</section>
+    <section class="card">
+
+      <h2>Flight Hours Log</h2>
+
+      <p>Enter your current hours in each category. Update as you progress.</p>
+
+      <!-- Progress Bar Input -->
+      <label for="hoursProgressInput">Overall Progress Toward Airline Hours (%)</label>
+      <input type="text" id="hoursProgressInput" class="input-field" placeholder="e.g., 35">
+
+      <div class="progress-container">
+        <div class="progress-bar" id="hoursProgressBar">0%</div>
+      </div>
+
+      <div class="grid two-col">
+
+        <div>
+          <label for="totalHours">Total Hours</label>
+          <input type="text" id="totalHours" class="input-field" placeholder="e.g., 42.3">
+        </div>
+
+        <div>
+          <label for="pplHours">Private Pilot (PPL)</label>
+          <input type="text" id="pplHours" class="input-field" placeholder="e.g., 18.7">
+        </div>
+
+        <div>
+          <label for="irHours">Instrument (IR)</label>
+          <input type="text" id="irHours" class="input-field" placeholder="e.g., 5.2">
+        </div>
+
+        <div>
+          <label for="cplHours">Commercial (CPL)</label>
+          <input type="text" id="cplHours" class="input-field" placeholder="e.g., 0.0">
+        </div>
+
+        <div>
+          <label for="multiHours">Multi-Engine</label>
+          <input type="text" id="multiHours" class="input-field" placeholder="e.g., 0.0">
+        </div>
+
+        <div>
+          <label for="cfiHours">CFI / CFII / MEI</label>
+          <input type="text" id="cfiHours" class="input-field" placeholder="e.g., 0.0">
+        </div>
+
+      </div>
+
+    </section>
 
 
-  <!-- Optional / Conditional Classes -->
-<section class="card">
-  <h2>Optional / Conditional Classes</h2>
-  <p>These may or may not be required depending on catalog year or transfer evaluations.</p>
 
-  <ul class="checklist">
-    <li>
-      <input type="checkbox" id="opt_finearts" class="save-check">
-      <label for="opt_finearts">Additional Fine Arts (if THEA doesn’t cover both categories)</label>
-    </li>
-    <li>
-      <input type="checkbox" id="opt_humanities" class="save-check">
-      <label for="opt_humanities">Additional Humanities (if needed)</label>
-    </li>
-    <li>
-      <input type="checkbox" id="opt_avsc_elective" class="save-check">
-      <label for="opt_avsc_elective">Upper-Division AVSC Elective</label>
-    </li>
-    <li>
-      <input type="checkbox" id="opt_internship" class="save-check">
-      <label for="opt_internship">Internship / Industry Experience</label>
-    </li>
-    <li>
-      <input type="checkbox" id="opt_remaining_gened" class="save-check">
-      <label for="opt_remaining_gened">Any remaining Gen Ed distribution</label>
-    </li>
-  </ul>
-</section>
+    <!-- ========================================================= -->
+    <!-- RATINGS CHECKLIST -->
+    <!-- ========================================================= -->
+
+    <section class="card">
+
+      <h2>Ratings & Certifications Checklist</h2>
+
+      <ul class="checklist">
+
+        <li>
+          <input type="checkbox" id="chk_ppl" class="save-check">
+          <label for="chk_ppl">Private Pilot License (PPL)</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="chk_ir" class="save-check">
+          <label for="chk_ir">Instrument Rating (IR)</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="chk_cpl" class="save-check">
+          <label for="chk_cpl">Commercial Pilot License (CPL)</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="chk_me" class="save-check">
+          <label for="chk_me">Multi-Engine Rating (ME)</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="chk_cfi" class="save-check">
+          <label for="chk_cfi">Certified Flight Instructor (CFI)</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="chk_cfii" class="save-check">
+          <label for="chk_cfii">CFII (Instrument Instructor)</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="chk_mei" class="save-check">
+          <label for="chk_mei">MEI (Multi-Engine Instructor)</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="chk_med" class="save-check">
+          <label for="chk_med">First Class Medical</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="chk_hours" class="save-check">
+          <label for="chk_hours">1,000–1,500 Total Hours</label>
+        </li>
+
+      </ul>
+
+    </section>
 
 
-  <!-- Notes Section -->
-  <section class="card">
-    <h2>Notes & Semester Reflections</h2>
-    <textarea class="notes-box" id="notesMain" placeholder="Write thoughts, goals, or semester reflections here..."></textarea>
 
-  </section>
+    <!-- ========================================================= -->
+    <!-- REQUIRED CLASSES CHECKLIST -->
+    <!-- ========================================================= -->
 
-  <nav class="page-nav">
-    <a href="index.html" class="btn-secondary">← Back to Home</a>
-  </nav>
+    <section class="card">
 
-</main>
+      <h2>Required UVU Classes Checklist</h2>
 
-<footer class="site-footer">
-  <p>Track your progress. Stay intentional. Keep climbing.</p>
-</footer>
-<script src="script.js"></script>
+      <p>Mark off each class as you complete it.</p>
 
+
+
+      <!-- ===================== -->
+      <!-- GENERAL EDUCATION -->
+      <!-- ===================== -->
+
+      <h3>General Education</h3>
+
+      <ul class="checklist">
+
+        <li>
+          <input type="checkbox" id="gen_engl2010" class="save-check">
+          <label for="gen_engl2010">ENGL 2010 (Completed)</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="gen_math1210" class="save-check">
+          <label for="gen_math1210">MATH 1210 (AP Calc)</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="gen_hum1010" class="save-check">
+          <label for="gen_hum1010">HUM 1010 (Humanities)</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="gen_biol1010" class="save-check">
+          <label for="gen_biol1010">BIOL 1010</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="gen_exsc1097" class="save-check">
+          <label for="gen_exsc1097">EXSC 1097 (Fitness for Life)</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="gen_pols1100" class="save-check">
+          <label for="gen_pols1100">POLS 1100</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="gen_elective" class="save-check">
+          <label for="gen_elective">Remaining Gen Ed Distribution</label>
+        </li>
+
+      </ul>
+
+
+
+      <!-- ===================== -->
+      <!-- AVIATION CORE -->
+      <!-- ===================== -->
+
+      <h3>Aviation Core</h3>
+
+      <ul class="checklist">
+
+        <li>
+          <input type="checkbox" id="avsc_1010" class="save-check">
+          <label for="avsc_1010">AVSC 1010 – Survey of Aviation</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="avsc_1100" class="save-check">
+          <label for="avsc_1100">AVSC 1100 – Private Ground</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="avsc_1110" class="save-check">
+          <label for="avsc_1110">AVSC 1110 – Private Flight</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="avsc_2070" class="save-check">
+          <label for="avsc_2070">AVSC 2070 – Aviation Weather</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="avsc_2150" class="save-check">
+          <label for="avsc_2150">AVSC 2150 – Air Transportation</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="avsc_2110" class="save-check">
+          <label for="avsc_2110">AVSC 2110 – Instrument Ground</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="avsc_2120" class="save-check">
+          <label for="avsc_2120">AVSC 2120 – Instrument Flight</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="avsc_2160" class="save-check">
+          <label for="avsc_2160">AVSC 2160 – Aviation Safety</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="avsc_3110" class="save-check">
+          <label for="avsc_3110">AVSC 3110 – Commercial Ground</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="avsc_3120" class="save-check">
+          <label for="avsc_3120">AVSC 3120 – Commercial Flight</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="avsc_3300" class="save-check">
+          <label for="avsc_3300">AVSC 3300 – Multi-Engine Ground</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="avsc_multi" class="save-check">
+          <label for="avsc_multi">Multi-Engine Add-On</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="avsc_3030" class="save-check">
+          <label for="avsc_3030">AVSC 3030 – Aviation Professional Seminar</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="avsc_cfi_ground" class="save-check">
+          <label for="avsc_cfi_ground">CFI Ground</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="avsc_cfi_flight" class="save-check">
+          <label for="avsc_cfi_flight">CFI Flight</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="avsc_cfii" class="save-check">
+          <label for="avsc_cfii">CFII</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="avsc_mei" class="save-check">
+          <label for="avsc_mei">MEI</label>
+        </li>
+
+        <li>
+          <input type="checkbox" id="avsc_4100g" class="save-check">
+          <label for="avsc_4100g">AVSC 4100G – Upper-Division AVSC Elective</label>
+        </li>
+
+      </ul>
+
+    </section>
+
+
+
+    <!-- ========================================================= -->
+    <!-- NOTES SECTION -->
+    <!-- ========================================================= -->
+
+    <section class="card">
+
+      <h2>Notes & Semester Reflections</h2>
+
+      <textarea class="notes-box" id="notesMain" placeholder="Write thoughts, goals, or semester reflections here..."></textarea>
+
+    </section>
+
+
+
+    <nav class="page-nav">
+      <a href="index.html" class="btn-secondary">← Back to Home</a>
+    </nav>
+
+  </main>
+
+
+
+  <footer class="site-footer">
+    <p>Track your progress. Stay intentional. Keep climbing.</p>
+  </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
